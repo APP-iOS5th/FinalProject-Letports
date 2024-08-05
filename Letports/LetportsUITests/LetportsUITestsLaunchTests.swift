@@ -2,7 +2,7 @@
 //  LetportsUITestsLaunchTests.swift
 //  LetportsUITests
 //
-//  Created by mosi on 8/2/24.
+//  Created by mosi on 8/5/24.
 //
 
 import XCTest
@@ -17,7 +17,6 @@ final class LetportsUITestsLaunchTests: XCTestCase {
         continueAfterFailure = false
     }
 
-    @MainActor
     func testLaunch() throws {
         let app = XCUIApplication()
         app.launch()
