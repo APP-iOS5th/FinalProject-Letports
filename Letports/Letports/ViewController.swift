@@ -39,6 +39,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         self.view.backgroundColor = .white
         navigationView.delegate = self
         self.view.addSubview(navigationView)
@@ -47,6 +48,11 @@ class ViewController: UIViewController {
             navigationView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             navigationView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
         ])
+
+        self.view.backgroundColor = UIColor("#BBBBBB", alpha: 1.0)
+        self.view.backgroundColor = .lp_background_white
+    
+
     }
 }
 
