@@ -19,6 +19,7 @@ enum NaviButtonType {
     case gear
     case create
     case alert
+    case empty
     
     var buttonName: String {
         switch self {
@@ -30,6 +31,8 @@ enum NaviButtonType {
             return "생성"
         case .alert:
             return "bell"
+        case .empty:
+            return ""
         }
     }
 }
@@ -43,7 +46,7 @@ enum ScreenType {
     /// TabView Profile  Screen
     case largeProfile(btnName: NaviButtonType = .gear)
     /// Gathering Detail  Screen
-    case smallGathering(btnName: NaviButtonType)
+    case smallGathering(gatheringName: String, btnName: NaviButtonType)
     /// Profile Detail  Screen
     case samllProfile
     /// Gathering Setting Screen
@@ -62,9 +65,9 @@ enum ScreenType {
             return "소모임"
         case .largeProfile:
             return "프로필"
-        case .smallGathering:
+        case .smallGathering(let gatheringName, _):
             //모임명으로 바뀌어야함
-            return "수호신"
+            return gatheringName
         case .samllProfile:
             return "프로필"
         case .smallGatheringSetting:
@@ -80,7 +83,7 @@ enum ScreenType {
         switch self {
             
         case .largeProfile(let btnName),
-                .smallGathering(let btnName),
+                .smallGathering(_, let btnName),
                 .smallGatheringSetting(let btnName),
                 .smallCreateGathering(let btnName):
             
@@ -90,7 +93,6 @@ enum ScreenType {
         }
     }
 }
-
 
 protocol CustomNavigationDelegate: AnyObject {
     func smallRightButtonDidTap()
@@ -353,12 +355,10 @@ class CustomNavigationView: UIView {
     
     
     @objc func smallRightButtonDidTap() {
-        print("smallRightButtonDidTap")
-        delegate?.smallRightButtonDidTap()
+        self.delegate?.smallRightButtonDidTap()
     }
     
     @objc func sportsSelectButtonDidTap() {
-        print("sportsSelectButtonDidTap")
         self.delegate?.sportsSelectButtonDidTap()
     }
     

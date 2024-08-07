@@ -8,15 +8,35 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     private lazy var navigationView: CustomNavigationView = {
-        let view = CustomNavigationView(isLargeNavi: .small, screenType: .smallCreateGathering(btnName: .create))
+        
+        let btnName: NaviButtonType
+        
+        if UserManager.shared.isLoggedIn {
+            switch UserManager.shared.userRole {
+            case .admin:
+                btnName = .gear
+            case .member:
+                btnName = .ellipsis
+            case .guest:
+                btnName = .empty
+            }
+        } else {
+            btnName = .empty
+        }
+        
+        let view = CustomNavigationView(isLargeNavi: .small,
+                                        screenType: .smallGathering(gatheringName: "안녕안녕 영어모임",
+                                                                    btnName: btnName)
+        )
+        
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
@@ -32,6 +52,6 @@ class ViewController: UIViewController {
 
 extension ViewController: CustomNavigationDelegate {
     func smallRightButtonDidTap() {
-    
+        
     }
 }

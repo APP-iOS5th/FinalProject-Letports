@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		411D4E522C6337AE00B07D84 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411D4E512C6337AE00B07D84 /* UserManager.swift */; };
 		412920BA2C61BC2900AE392A /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412920B92C61BC2900AE392A /* CustomNavigationView.swift */; };
 		412920BD2C61ED7A00AE392A /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412920BC2C61ED7A00AE392A /* Extension+UIImage.swift */; };
 		D8201FB22C606934004DF06C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8201FB12C606934004DF06C /* AppDelegate.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		411D4E512C6337AE00B07D84 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		412920B92C61BC2900AE392A /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
 		412920BC2C61ED7A00AE392A /* Extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
 		D8201FAE2C606934004DF06C /* Letports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Letports.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,14 +119,15 @@
 		D8201FB02C606934004DF06C /* Letports */ = {
 			isa = PBXGroup;
 			children = (
-				412920BE2C61EEE900AE392A /* CustomNavigation */,
 				D8201FB12C606934004DF06C /* AppDelegate.swift */,
 				D8201FB32C606934004DF06C /* SceneDelegate.swift */,
 				D8201FB52C606934004DF06C /* ViewController.swift */,
 				D8201FB72C606935004DF06C /* Assets.xcassets */,
 				D8201FB92C606935004DF06C /* LaunchScreen.storyboard */,
 				D8201FBC2C606935004DF06C /* Info.plist */,
+				412920BE2C61EEE900AE392A /* CustomNavigation */,
 				412920BB2C61ED6A00AE392A /* Extension */,
+				411D4E512C6337AE00B07D84 /* UserManager.swift */,
 			);
 			path = Letports;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				411D4E522C6337AE00B07D84 /* UserManager.swift in Sources */,
 				D8201FB62C606934004DF06C /* ViewController.swift in Sources */,
 				412920BD2C61ED7A00AE392A /* Extension+UIImage.swift in Sources */,
 				D8201FB22C606934004DF06C /* AppDelegate.swift in Sources */,
