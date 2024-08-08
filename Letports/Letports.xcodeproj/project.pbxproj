@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		411D4E522C6337AE00B07D84 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411D4E512C6337AE00B07D84 /* UserManager.swift */; };
+		412920BA2C61BC2900AE392A /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412920B92C61BC2900AE392A /* CustomNavigationView.swift */; };
+		412920BD2C61ED7A00AE392A /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412920BC2C61ED7A00AE392A /* Extension+UIImage.swift */; };
 		411D4E542C635A8B00B07D84 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411D4E532C635A8B00B07D84 /* Extension+Color.swift */; };
 		D8201FB22C606934004DF06C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8201FB12C606934004DF06C /* AppDelegate.swift */; };
 		D8201FB42C606934004DF06C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8201FB32C606934004DF06C /* SceneDelegate.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		411D4E512C6337AE00B07D84 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		412920B92C61BC2900AE392A /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
+		412920BC2C61ED7A00AE392A /* Extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
 		411D4E532C635A8B00B07D84 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 		D8201FAE2C606934004DF06C /* Letports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Letports.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8201FB12C606934004DF06C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +55,6 @@
 		D8201FCB2C606935004DF06C /* LetportsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetportsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8201FCF2C606935004DF06C /* LetportsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetportsUITests.swift; sourceTree = "<group>"; };
 		D8201FD12C606935004DF06C /* LetportsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetportsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D8901F712C60A5A2005FD4B5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +82,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		412920BB2C61ED6A00AE392A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				412920BC2C61ED7A00AE392A /* Extension+UIImage.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		412920BE2C61EEE900AE392A /* CustomNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				412920B92C61BC2900AE392A /* CustomNavigationView.swift */,
+			);
+			path = CustomNavigation;
+			sourceTree = "<group>";
+		};
 		D8201FA52C606934004DF06C = {
 			isa = PBXGroup;
 			children = (
-				D8901F712C60A5A2005FD4B5 /* .gitignore */,
 				D8201FB02C606934004DF06C /* Letports */,
 				D8201FC42C606935004DF06C /* LetportsTests */,
 				D8201FCE2C606935004DF06C /* LetportsUITests */,
@@ -107,6 +127,9 @@
 				D8201FB72C606935004DF06C /* Assets.xcassets */,
 				D8201FB92C606935004DF06C /* LaunchScreen.storyboard */,
 				D8201FBC2C606935004DF06C /* Info.plist */,
+				412920BE2C61EEE900AE392A /* CustomNavigation */,
+				412920BB2C61ED6A00AE392A /* Extension */,
+				411D4E512C6337AE00B07D84 /* UserManager.swift */,
 				411D4E532C635A8B00B07D84 /* Extension+Color.swift */,
 			);
 			path = Letports;
@@ -259,9 +282,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				411D4E522C6337AE00B07D84 /* UserManager.swift in Sources */,
 				D8201FB62C606934004DF06C /* ViewController.swift in Sources */,
+				412920BD2C61ED7A00AE392A /* Extension+UIImage.swift in Sources */,
 				D8201FB22C606934004DF06C /* AppDelegate.swift in Sources */,
 				D8201FB42C606934004DF06C /* SceneDelegate.swift in Sources */,
+				412920BA2C61BC2900AE392A /* CustomNavigationView.swift in Sources */,
 				411D4E542C635A8B00B07D84 /* Extension+Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,9 +460,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9VD7JAKR25;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 9VD7JAKR25;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Letports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -450,6 +478,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosi.Letports;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Letports;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -465,9 +495,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9VD7JAKR25;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 9VD7JAKR25;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Letports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -481,6 +513,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosi.Letports;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Letports;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
