@@ -8,6 +8,9 @@
 import UIKit
 
 class HomeVC: UIViewController {
+    
+    weak var coordinator: HomeCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .lpBackgroundWhite

@@ -8,6 +8,9 @@
 import UIKit
 
 class ProfileVC: UIViewController {
+    
+    weak var coordinator: ProfileCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .lpBackgroundWhite
