@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		411D4E542C635A8B00B07D84 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411D4E532C635A8B00B07D84 /* Extension+Color.swift */; };
+		B82471322C6466D80067BD09 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82471312C6466D80067BD09 /* TabBarController.swift */; };
+		B824713B2C647F9F0067BD09 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B824713A2C647F9F0067BD09 /* HomeVC.swift */; };
+		B824713D2C647FAF0067BD09 /* GatheringVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B824713C2C647FAF0067BD09 /* GatheringVC.swift */; };
+		B824713F2C647FBB0067BD09 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B824713E2C647FBB0067BD09 /* ProfileVC.swift */; };
 		D8201FB22C606934004DF06C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8201FB12C606934004DF06C /* AppDelegate.swift */; };
 		D8201FB42C606934004DF06C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8201FB32C606934004DF06C /* SceneDelegate.swift */; };
 		D8201FB62C606934004DF06C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8201FB52C606934004DF06C /* ViewController.swift */; };
@@ -37,6 +41,10 @@
 
 /* Begin PBXFileReference section */
 		411D4E532C635A8B00B07D84 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
+		B82471312C6466D80067BD09 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		B824713A2C647F9F0067BD09 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		B824713C2C647FAF0067BD09 /* GatheringVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatheringVC.swift; sourceTree = "<group>"; };
+		B824713E2C647FBB0067BD09 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		D8201FAE2C606934004DF06C /* Letports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Letports.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8201FB12C606934004DF06C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8201FB32C606934004DF06C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +84,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B82471372C647F560067BD09 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B824713A2C647F9F0067BD09 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B82471382C647F600067BD09 /* Gathering */ = {
+			isa = PBXGroup;
+			children = (
+				B824713C2C647FAF0067BD09 /* GatheringVC.swift */,
+			);
+			path = Gathering;
+			sourceTree = "<group>";
+		};
+		B82471392C647F720067BD09 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B824713E2C647FBB0067BD09 /* ProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		D8201FA52C606934004DF06C = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +134,10 @@
 				D8201FB12C606934004DF06C /* AppDelegate.swift */,
 				D8201FB32C606934004DF06C /* SceneDelegate.swift */,
 				D8201FB52C606934004DF06C /* ViewController.swift */,
+				B82471312C6466D80067BD09 /* TabBarController.swift */,
+				B82471372C647F560067BD09 /* Home */,
+				B82471382C647F600067BD09 /* Gathering */,
+				B82471392C647F720067BD09 /* Profile */,
 				D8201FB72C606935004DF06C /* Assets.xcassets */,
 				D8201FB92C606935004DF06C /* LaunchScreen.storyboard */,
 				D8201FBC2C606935004DF06C /* Info.plist */,
@@ -260,6 +296,10 @@
 				D8201FB62C606934004DF06C /* ViewController.swift in Sources */,
 				D8201FB22C606934004DF06C /* AppDelegate.swift in Sources */,
 				D8201FB42C606934004DF06C /* SceneDelegate.swift in Sources */,
+				B824713D2C647FAF0067BD09 /* GatheringVC.swift in Sources */,
+				B824713F2C647FBB0067BD09 /* ProfileVC.swift in Sources */,
+				B824713B2C647F9F0067BD09 /* HomeVC.swift in Sources */,
+				B82471322C6466D80067BD09 /* TabBarController.swift in Sources */,
 				411D4E542C635A8B00B07D84 /* Extension+Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,27 +17,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: windowScene)
         
-        let tabBarController = UITabBarController()
+        let mainVC = TabBarController()
         
-        let homeVC = UIViewController()
-        homeVC.view.backgroundColor = .white
-        homeVC.tabBarItem = UITabBarItem(title: "홈", image: UIImage(systemName: "house"), tag: 0)
-        
-        let gatheringVC = UIViewController()
-        gatheringVC.view.backgroundColor = .white
-        gatheringVC.tabBarItem = UITabBarItem(title: "소모임", image: UIImage(systemName: "person.3"), tag: 1)
-        
-        let profileVC = UIViewController()
-        profileVC.view.backgroundColor = .white
-        profileVC.tabBarItem = UITabBarItem(title: "프로필", image: UIImage(systemName: "person"), tag: 2)
-        
-        let homeNC = UINavigationController(rootViewController: homeVC)
-        let gatheringNC = UINavigationController(rootViewController: gatheringVC)
-        let profileNC = UINavigationController(rootViewController: profileVC)
-        
-        tabBarController.viewControllers = [homeNC, gatheringNC, profileNC]
-        
-        window?.rootViewController = tabBarController
+        window?.rootViewController = mainVC
         window?.makeKeyAndVisible()
         
     }
