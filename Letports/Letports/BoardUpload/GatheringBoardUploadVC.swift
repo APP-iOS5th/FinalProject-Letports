@@ -53,10 +53,11 @@ class GatheringBoardUploadVC: UIViewController {
         super.viewDidLoad()
         
         setupUI()
+        setupTapGesture()
     }
     
     
-    //MARK: - SetupUI
+    //MARK: - Setup
     private func setupUI() {
         self.view.backgroundColor = .lpBackgroundWhite
         
@@ -76,7 +77,15 @@ class GatheringBoardUploadVC: UIViewController {
         ])
     }
     
+    private func setupTapGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tapGesture.cancelsTouchesInView = false
+        view.addGestureRecognizer(tapGesture)
+    }
     
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
     
 }
 
@@ -134,8 +143,6 @@ extension GatheringBoardUploadVC: UITableViewDelegate, UITableViewDataSource {
             if let cell = tableView.dequeueReusableCell(withIdentifier: "GatheringBoardUploadQuestionTVCell", for: indexPath) as? GatheringBoardUploadQuestionTVCell {
                 return cell
             }
-        default:
-            return UITableViewCell()
         }
         return UITableViewCell()
     }
